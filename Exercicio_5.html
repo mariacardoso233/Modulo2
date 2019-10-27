@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+
+    </header>
+    <main>
+        <form action="form.html" method="POST"></form>
+        <legend>Personal info</legend><br>
+            <label for="name">Name: </label>
+            <input 
+                type="text"
+                pattern="[A-Z][a-z]+\s[A-Z][a-z]+"
+                required
+            ><br><br>
+            <label for="non-member">Non-member</label>
+            <input 
+                type="radio"
+                value="non-member"
+                name="member"
+            ><br>
+            <label for="member">Member</label>
+            <input 
+                type="radio"
+                value="member"
+                name="member"
+            ><br><br>
+
+            <label for="e-mail">E-mail: </label>
+            <input type="email"><br>
+
+            <fieldset>
+                <legend>Reservation info: </legend>
+                <select>
+                    <option value="badmington">Badmington</option>
+                    <option value="squash">Squash</option>
+                    <option value="racquetball">Racquetball</option>
+                </select>
+            </fieldset>
+
+            <input type="data-hora-local">
+            <input type="checkbox" name="terms">Eu concordo com os termos e condições
+            <input type="submit" name="submitbutton" id="submitbutton" value="Register">
+    </main>
+    
+</body>
+</html>
